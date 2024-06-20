@@ -6,7 +6,6 @@ const Footer = () => {
     <footer>
         {/* <p>Powered by</p>
         <img src={DHlogo} alt='DH-logo' /> */}
-
         
     </footer>
   )

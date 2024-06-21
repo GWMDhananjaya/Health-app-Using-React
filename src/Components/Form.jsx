@@ -39,20 +39,38 @@ const Form = () => {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
-        <label>
-          Full Name:
-          <input type="text" value={fullName} onChange={(e) => setFullName(e.target.value)} />
-        </label>
-        <label>
-          Email:
-          <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-        </label>
-        <button type="submit">Submit</button>
-      </form>
-      {error && <p>{error}</p>}
-      {successMessage && <p>{successMessage}</p>}
+    <div className='flex items-center justify-center '>
+     <form onSubmit={handleSubmit}>
+      <label>
+        <input
+          type="text"
+          value={fullName}
+          onChange={(e) => setFullName(e.target.value)}
+          placeholder='Full name'
+          className=''
+        />
+      </label>
+      <br />
+      <label>
+        <input
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder='Email'
+        />
+      </label>
+      <br />
+      <button className='px-20 py-2 ml-1 text-black bg-gray-100 border-2 hover:bg-gray-200' type="submit">Submit</button>
+    </form>
+    <br />
     </div>
+   <div className='flex items-center justify-center mt-4'>
+   {error && <p>{error}</p>}
+   {successMessage && <p>{successMessage}</p>}
+   </div>
+   </div>
+     
+    
   );
 };
 

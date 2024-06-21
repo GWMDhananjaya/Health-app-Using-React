@@ -8,6 +8,7 @@ import Contact from './Pages/Contact';
 import Detail from './Pages/Detail';
 import { GlobalProvider } from './Components/utils/global.context';
 import './App.css';
+import Footer from './Components/Footer';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/dentist/:id" element={<Detail />} />
         </Routes>
+        <Footer/>
       </Router>
     </GlobalProvider>
   );

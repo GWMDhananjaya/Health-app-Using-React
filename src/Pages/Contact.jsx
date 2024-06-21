@@ -25,7 +25,8 @@ const Contact = () => {
   return (
     <div className={`favs-container ${state.theme === 'dark' ? 'dark-theme' : 'light-theme'}`}>
     <div>
-      <h2>Want to know more?</h2>
+     
+      <h1 className="font-bold text-1xl ">Want to know more?</h1>
       <p>Send us your questions and we will contact you</p>
       <Form />
     </div>

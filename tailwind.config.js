@@ -9,7 +9,11 @@ export default {
     flowbite.content(),
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'custom-gray': '#333333',
+      },
+    },
   },
   plugins: [  flowbite.plugin(),],
 }

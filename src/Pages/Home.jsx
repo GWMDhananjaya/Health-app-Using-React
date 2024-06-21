@@ -19,8 +19,8 @@ const Home = () => {
 
   return (
     <div className={`favs-container ${state.theme === 'dark' ? 'dark-theme' : 'light-theme'}`}>
-      <main className="pl-40">
-        <h1 className="mb-6 text-2xl font-bold">Home</h1>
+      <main className="pl-64 pr-64">
+        <h1 className="mb-2 text-3xl font-bold text-center">Home</h1>
         <div className="flex flex-wrap ">
           {demoDentists.map((dentist) => (
             <div key={dentist.id} className=" lg:w-1/4">
@@ -29,6 +29,7 @@ const Home = () => {
                 username={dentist.username}
                 id={dentist.id}
                 branch={dentist.branch}
+                website={dentist.website}
               />
             </div>
           ))}

@@ -15,7 +15,7 @@ const Favs = () => {
       <h1 className="mb-2 text-3xl font-bold text-center">Dentists Favs</h1>
       <div className="flex flex-wrap justify-around pl-64 pr-64">
         {favorites.length === 0 ? (
-          <p>No favorites saved yet.</p>
+          <p></p>
         ) : (
           favorites.map((dentist) => (
             <Card
